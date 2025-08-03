@@ -41,6 +41,7 @@ After applying SMOTE, the model exhibited improved generalization, especially fo
  **Classifier Architecture :**
  ___
  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/588d174e-e084-449c-98d1-a1167578782e" />
+ 
  ___
 The classifier was implemented as a feedforward neural network using TensorFlow/Keras.
 Input: 768-dimensional vectors from Wav2Vec2
