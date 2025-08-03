@@ -39,7 +39,9 @@ This helped balance the dataset and mitigate model bias toward dominant classes.
 After applying SMOTE, the model exhibited improved generalization, especially for low-resource accents like Mandarin.
 
  **Classifier Architecture :**
+ ___
  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/588d174e-e084-449c-98d1-a1167578782e" />
+ ___
 The classifier was implemented as a feedforward neural network using TensorFlow/Keras.
 Input: 768-dimensional vectors from Wav2Vec2
 Architecture: Multiple dense layers with ReLU activation and Dropout (0.5) for regularization Softmax output layer for multi-class classification
@@ -47,16 +49,17 @@ Training Details: Optimizer: Adam Loss: Categorical Cross-Entropy Batch size: 32
  
 
 ## Results
-Performance Summary:
 
- 
+**Performance Summary**
 
-Feature Type	Accuracy
-Mel-Spectrograms	~60%
-MFCCs	~70%
-Parselmouth Features	~74%
-Wav2Vec2 (raw)	~86%
-Wav2Vec2 + SMOTE	92.41%
+| Feature Type            | Accuracy |
+|-------------------------|----------|
+| Mel-Spectrograms       | ~60%     |
+| MFCCs                  | ~70%     |
+| Parselmouth Features   | ~74%     |
+| Wav2Vec2 (raw)         | ~86%     |
+| Wav2Vec2 + SMOTE       | 92.41%   |
+
  
 
 **Key Observations:**
