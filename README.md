@@ -13,7 +13,7 @@ The dataset used in this project was sourced from the Speech Accent Archive, whi
 
 Key Points:
 
-Languages Included: English, Mandarin, Arabic, and several Indian languages.
+Languages Included: English, Mandarin and Arabic.
 Speaker Selection: Only male speakers were selected to ensure demographic consistency and reduce confounding factors during training.
 Data Acquisition: The archive does not provide a mass-download feature. A Python web scraper was developed to extract metadata and download links. One script scrapes speaker data (language, gender, region, etc.) and saves it into a CSV. A second script downloads the associated .wav files using the extracted URLs.
 This approach ensured scalable, structured, and reproducible data collection from the archive.
